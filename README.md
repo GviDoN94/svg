@@ -1,1 +1,1 @@
-# Email layout
+# Practice with SVG
