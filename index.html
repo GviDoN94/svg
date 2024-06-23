@@ -5,14 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SVG</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <main>
     <section class="top">
       <div class="container">
-
+        <h1 class="visually-hidden">SVG</h1>
+        <h2 class="top__title">Как это работает?</h2>
+        <ul class="cards-list">
+          <li class="card">
+            <svg class="card__img" viewBox="0 0 375 288">
+              <use xlink:href="sprite.svg#coffee"></use>
+            </svg>
+            <h3 class="card__title">Утренний <span class="card__title--yellow">кофе</span></h3>
+            <div class="card__description">
+              Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее
+              просыпаемся.
+            </div>
+          </li>
+          <li class="card">
+            <svg class="card__img" viewBox="0 0 375 288">
+              <use xlink:href="sprite.svg#meditation"></use>
+            </svg>
+            <h3 class="card__title">Час <span class="card__title--yellow">медитации</span></h3>
+            <div class="card__description">
+              После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.
+            </div>
+          </li>
+          <li class="card">
+            <svg class="card__img" viewBox="0 0 375 288">
+              <use xlink:href="sprite.svg#sprint"></use>
+            </svg>
+            <h3 class="card__title">Вперёд к <span class="card__title--yellow">свершениям!</span></h3>
+            <div class="card__description">
+              Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

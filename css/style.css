@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansRegular.woff2") format("woff2"),
+    url("../fonts/OpenSansRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSansBold.woff2") format("woff2"),
+    url("../fonts/OpenSansBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", "sans-serif";
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1525px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.top {
+  background-color: #fff6ed;
+  padding: 60px 0 40px;
+}
+
+.top__title {
+  margin: 0;
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: center;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  max-width: 375px;
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 20px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.card__title--yellow {
+  color: #ff7a00;
+}
+
+.card__description {
+  margin-top: 6px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 28px;
+}
