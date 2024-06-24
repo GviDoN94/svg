@@ -95,9 +95,18 @@ body {
 }
 
 .bottom__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
+}
+
+.bottom__ellipse {
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  right: 110px;
+  width: 550px;
 }
 
 .bottom__left {
